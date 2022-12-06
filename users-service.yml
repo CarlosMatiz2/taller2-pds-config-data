@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: customer-service
+  profiles:
+    active: dev
+server:
+  servlet:
+    context-path: /store/api/v1
+  port: 9060
