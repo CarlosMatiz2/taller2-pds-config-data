@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: showtimes-service
+  profiles:
+    active: dev
+server:
+  servlet:
+    context-path: /api/v1
+  port: 9090
