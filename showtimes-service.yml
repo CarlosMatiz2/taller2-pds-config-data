@@ -25,3 +25,10 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+feign:
+  circuitbreaker:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 5000
