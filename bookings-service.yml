@@ -3,6 +3,12 @@ spring:
     name: bookings-service
   profiles:
     active: dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+        instance:
+          name: Bookings API Service
 server:
   servlet:
     context-path: /api/v1

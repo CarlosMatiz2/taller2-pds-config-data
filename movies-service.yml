@@ -3,6 +3,12 @@ spring:
     name: movies-service
   profiles:
     active: dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+        instance:
+          name: Movies API Service
 server:
   servlet:
     context-path: /api/v1

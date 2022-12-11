@@ -3,6 +3,12 @@ spring:
     name: showtimes-service
   profiles:
     active: dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+        instance:
+          name: Showtimes API Service
 server:
   servlet:
     context-path: /api/v1
